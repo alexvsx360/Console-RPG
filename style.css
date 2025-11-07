@@ -1,0 +1,165 @@
+body {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+    color: #f0f0f0;
+    font-family: "Courier New", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    text-align: center;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+    border: 2px solid #ff0000;
+}
+
+h1 {
+    color: #ff0000;
+    font-size: 2em;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #00ffff;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+ol {
+    text-align: left;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+button {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    border: 2px solid #ff6666;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff3333, #ff0000);
+    box-shadow: 0 0 15px #ff0000;
+}
+
+#speed-display {
+    display: block;
+    width: 150px;
+    margin: 15px auto;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid #00ff00;
+    font-size: 18px;
+    text-align: center;
+    color: #00ff00;
+    background: #000;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+#status {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.info { background-color: #1e88e5; }
+.error { background-color: #d32f2f; }
+.success { background-color: #43a047; }
+
+#speed-display {
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+#speed-display[style*="block"] {
+    opacity: 1;
+}
+
+/* Audio Control Icons at Top */
+#audio-controls-top {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.audio-icon-btn {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #00cccc, #008888);
+    border: 2px solid #00ffff;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.audio-icon-btn:hover {
+    background: linear-gradient(135deg, #00ffff, #00cccc);
+    box-shadow: 0 0 20px #00ffff;
+    transform: scale(1.1);
+}
+
+.audio-icon-btn.muted {
+    background: linear-gradient(135deg, #555, #333);
+    border-color: #666;
+    opacity: 0.6;
+}
+
+.audio-icon-btn.muted:hover {
+    background: linear-gradient(135deg, #666, #444);
+    box-shadow: 0 0 10px #888;
+    opacity: 0.8;
+}
+
+.audio-icon-btn .icon {
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+  #qrAlert {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  #qrBox {
+    background: white;
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    font-size: 10%;           /* 10% of normal font size */
+    font-family: monospace;
+    white-space: pre;
+    line-height: 1;
+    text-align: center;
+  }

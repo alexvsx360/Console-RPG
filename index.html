@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console RPG – Final Fantasy Style</title>
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Console RPG Adventure - Turn-Based Fantasy Game">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./social image.png">
+    <meta property="og:description" content="A unique turn-based RPG game played entirely in your browser's console! Explore, battle enemies, recruit party members, and defeat the final boss. Built with JavaScript by Alexander Richkov.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Console RPG Adventure">
+    <meta property="og:url" content="https://arich-software.co.il">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="Play a classic Final Fantasy-style RPG game in your browser console. Features turn-based battles, party management, and epic boss fights!">
+    <meta name="author" content="Alexander Richkov">
+    <meta name="keywords" content="console game, RPG, JavaScript, turn-based, Final Fantasy, browser game, Alexander Richkov">
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="audio-controls-top">
+    <button id="toggle-music" class="audio-icon-btn" title="Toggle Background Music">
+        <span class="icon">🎵</span>
+    </button>
+    <button id="toggle-effects" class="audio-icon-btn" title="Toggle Sound Effects">
+        <span class="icon">🔔</span>
+    </button>
+    <button id="toggle-all" class="audio-icon-btn" title="Toggle All Sounds">
+        <span class="icon">🔊</span>
+    </button>
+</div>
+
+<div id="container">
+    <h1>⚔️ Console RPG Adventure ⚔️</h1>
+    <h2 class="subtitle">Turn-Based Fantasy Game by Alexander Richkov</h2>
+
+    <div style="background: rgba(255,100,100,0.2); padding: 10px; border-radius: 8px; margin: 15px 0; border: 2px solid #ff6666;">
+        <strong style="color: #ff6666;">⚠️ Desktop Browsers Only:</strong> This game works only in <strong>desktop browsers</strong> (Chrome, Firefox, Edge, Safari on PC/Mac). Mobile browsers are not supported.
+    </div>
+
+    <ol>
+        <li>Open <strong>Developer Tools (F12)</strong></li>
+        <li>In Console tab, <strong>turn OFF "Preserve log"</strong></li>
+        <li>Enable <strong>"Messages"</strong> in console filters</li>
+        <li>Dock DevTools to <strong>side (~70% width)</strong></li>
+        <li><strong>Resize console</strong> until full game map is visible</li>
+        <li>Click <strong>Start Game</strong></li>
+        <li>Keep mouse <strong>hovering over this card</strong> for keyboard controls</li>
+    </ol>
+    
+    <div style="background: rgba(100,150,255,0.15); padding: 12px; border-radius: 8px; margin: 15px 0; border: 2px solid #6699ff;">
+        <strong style="color: #6699ff;">⌨️ Keyboard Controls:</strong>
+        <p style="margin: 8px 0;">All available keyboard controls will be displayed at the bottom of the screen during gameplay.</p>
+    </div>
+    
+    <div style="background: rgba(255,200,0,0.1); padding: 10px; border-radius: 8px; margin: 15px 0;">
+        <strong style="color: #ffcc00;">🎮 Classic RPG:</strong> Explore the world map, encounter random enemies, and engage in <strong>turn-based battles</strong>! Level up your hero and defeat powerful monsters! Inspired by old-school <strong>Final Fantasy</strong> games!
+    </div>
+
+    <button id="start-btn">Start Adventure</button>
+
+    <input id="stats-display"
+           readonly
+           type="text"
+           placeholder="Hero Stats"
+           style="display:none"
+        />
+
+    <p id="status" class="info">Waiting for DevTools to open...</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
