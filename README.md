@@ -1,5 +1,7 @@
 # ⚔️ Console RPG Adventure ⚔️
 
+**🎮 [Play Now!](https://alexvsx360.github.io/Console-RPG/)** | [Source Code](https://github.com/alexvsx360/Console-RPG)
+
 A unique turn-based RPG game played entirely in your browser's **Developer Console**! Explore a pixel-art world, battle enemies, recruit party members, and defeat the final boss. Inspired by classic Final Fantasy games with a programming/tech theme.
 
 **Created by Alexander Richkov** | [Website](https://arich-software.co.il) | [LinkedIn](https://www.linkedin.com/in/arich-software)
@@ -425,3 +427,4 @@ Created by **Alexander Richkov**. This project showcases creative game developme
 Simply open `index.html` in your browser and press F12 to start your adventure!
 
 **Ready to save the codebase from the ultimate bug? Start your adventure now!** 🚀⚔️
+
